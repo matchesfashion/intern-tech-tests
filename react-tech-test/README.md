@@ -1,40 +1,39 @@
-# Matchesfashion React Coding Challenge
+# MATCHESFASHION React Coding Challenge
 
 ## Running the application
-You will need Node installed, with a minimum version of 12 to be able to run the project, for information on 
-how to install Node, please visit <https://nodejs.org/en/>
+
+You will need Node installed with a minimum version of 12 to be able to run the project. For information on how to install Node, visit [https://nodejs.org/en/](https://nodejs.org/en/).
 
 Firstly, run `npm install` to install the dependencies required for this project.
 
-This application was made using create-react-app, and so to run the solution, simply use `npm start` in
-your terminal. The scripts can be found at the bottom of this readme.
+This application was made using [Create React App](https://create-react-app.dev), and so to run the solution, simply use `npm start` in your terminal. The scripts can be found at the bottom of this README.
 
 ## Introduction
 
 The test is broken up into a series of steps which will be displayed in the next section.
-We ask that you don't use any other packages or libraries, and just implement the code using
-React. To fetch the data, please **ONLY USE FETCH**. The fetch function has been mocked, so you do
-not require internet access to complete this challenge.
+
+We ask that you don't install or use any other packages or libraries, and just implement the code using
+React. To fetch the data, please only use the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch). The `fetch` function has been mocked, so you do not require internet access to complete this challenge.
 
 ## The Problem
 
-Your solution is to be completed within the folder
+Your solution is to be completed within the folder [`/src/Solution/YourSolution.js`](/react-tech-test/src/Solution/YourSolution.js).
 
-> src/Solution/YourSolution.js
+The folder [`/src/AdditionalFiles`](/react-tech-test/src/AdditionalFiles) contains files that are not part of your task, such as CSS, mocked data, and the React boilerplate.
 
-The folder AdditionalFiles, contains files that are not part of your task, such as css, mocked data and
-react boilerplate.
+The app that you are required to build features a table, your task will be to populate this table with a list of products which are fetched from an API. The URL for this API takes `pages` as a query parameter, for example:
 
-The app that you are required to build features a table, your task will be to populate this table with
-a list of products which are fetched from an API. The url for this API takes `pages` as a query parameter,
-for example `https://matchesfashion.com/api/products?page=0`, this returns a `count` of the total number of products
-and the array of products themselves.
+```plaintext
+https://matchesfashion.com/api/products?page=0
+```
 
-The products are broken up into 10 items per page and the first page is `0`, the ids of the products also begin at `0`.
+This should return a `count` of the total number of products and the array of products themselves.
+
+The products are broken up into 10 items per page and the first page is `0`, the IDs of the products also begin at `0`.
 
 An example product can be found below:
 
-```js
+```json
 product: {
     brand: "Bottega Veneta",
     costToBusiness: 74.91,

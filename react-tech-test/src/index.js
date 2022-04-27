@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './AdditionalFiles/index.css';
+
 import YourSolution from './Solution/YourSolution';
 import reportWebVitals from './AdditionalFiles/reportWebVitals';
-import {mockFetch} from "./AdditionalFiles/mockFetch";
+import { mockFetch } from './AdditionalFiles/mockFetch';
 
 window.fetch = mockFetch;
 
