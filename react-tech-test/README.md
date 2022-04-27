@@ -34,48 +34,46 @@ The products are broken up into 10 items per page and the first page is `0`, the
 An example product can be found below:
 
 ```json
-product: {
-    brand: "Bottega Veneta",
-    costToBusiness: 74.91,
-    id: 0,
-    name: "obtainable t-shirt",
-    quantitySold: 113,
-    soldPrice: 231.31
+{
+  "brand": "Bottega Veneta",
+  "costToBusiness": 74.91,
+  "id": 0,
+  "name": "obtainable t-shirt",
+  "quantitySold": 113,
+  "soldPrice": 231.31
 }
 ```
 
 ### Example Implementation
 
-To see an example of the implementation, go to the following url: <https://matchesfashion.github.io/bt-react-tech-test/>
+To see an example of the implementation, go to the following url: [https://matchesfashion.github.io/bt-react-tech-test/](https://matchesfashion.github.io/bt-react-tech-test/)
 
 ## Your Task
 
 You are **not** required to complete any CSS or to worry about the look/style of the app.
 
-1. Your first task is to fetch the data for the first page `0` and display the contents of the product within the `table`
-   in the `YourSolution.js` file (please ensure to place it within the `tbody` tags).
+1. Your first task is to fetch the data for the first page `0` and display the contents of the product within the `table` in the `YourSolution.js` file (please ensure to place it within the `tbody` tags).
 
-2. Next you are required to implement the functionality of the buttons at the bottom of the table and display the rest
-   of the results based on the page that you go to. The buttons should do the following:
-   - **First Page**
-     - this button should take you to the first page of the table
-     - it should be disabled if the current page is the first page
-   - **Previous Page**
-     - this button should take you to the previous page of the table
-     - it should be disabled if the current page is the first page
-   - **Next Page**
-     - this button should take you to the next page of the table
-     - it should be disabled if the current page is the last page
-   - **Last Page**
-     - this button should take you to the last page available of the table
-     - it should be disabled if the current page is the last page
+2. Next you are required to implement the functionality of the buttons at the bottom of the table and display the rest of the results based on the page that you go to. The buttons should do the following:
+    - **First Page**
+        - this button should take you to the first page of the table
+        - it should be disabled if the current page is the first page
+    - **Previous Page**
+        - this button should take you to the previous page of the table
+        - it should be disabled if the current page is the first page
+    - **Next Page**
+        - this button should take you to the next page of the table
+        - it should be disabled if the current page is the last page
+    - **Last Page**
+        - this button should take you to the last page available of the table
+        - it should be disabled if the current page is the last page
 
 ### Bonus Task
 
 The bonus task is to add a new field to the table headers called `Profit after Tax`. After this, you are required
-to calculate the total profit for each product in the table. Below is the calculation for this
+to calculate the total profit for each product in the table. Below is the calculation for this:
 
-```js
+```plaintext
 Profit = Sold Price - Cost To Business
 
 You pay no tax on the first 10 quantity sold for that product,
@@ -89,7 +87,7 @@ Pay tax on the two above the threshold, so 55.2 profit
 Profit after Tax is 355.20
 ```
 
-You can use the `ProfitAlgorithm.spec.js` file to test your calculations if it helps.
+You can use the [`/src/Solution/ProfitAlgorithm.spec.js`](/react-tech-test/src/Solution/ProfitAlgorithm.spec.js) file to test your calculations if it helps.
 
 ## Available Scripts
 
@@ -99,13 +97,16 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make changes.
+
 You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in the interactive watch mode.
+
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
