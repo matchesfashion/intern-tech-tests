@@ -4,21 +4,20 @@
 }
 
 .App button {
-  background-color: green;
-  border: 1px grey solid;
-  color: white;
+  background-color: #008000;
+  border: 1px #999 solid;
+  color: #FFF;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-
   cursor: pointer;
   margin: 10px;
 }
 
 .App button:disabled {
-  background: lightgrey;
+  background: #CCC;
   cursor: not-allowed;
 }
 
@@ -34,24 +33,25 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #282C34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #FFF;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #61DAFB;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

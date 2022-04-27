@@ -1,9 +1,9 @@
-
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url("https://fonts.googleapis.com/css?family=Lato:400,300,700");
 
 /* UNIVERSAL */
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -13,35 +13,53 @@ html, body {
   font-size: 100%;
 }
 
-html {box-sizing: border-box; font-size: 62.5%;}
-    
-*, *:before, *:after {
-    box-sizing: inherit;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 /* FONT & TYPOGRAPHY STYLES */
 
-p, h1, h2, h3, h4, body, html, label {
-  font-family: 'Lato', Helvetica, sans-serif;
+p,
+h1,
+h2,
+h3,
+h4,
+body,
+html,
+label {
+  font-family: "Lato", Helvetica, sans-serif;
   color: #333447;
   line-height: 1;
 }
+
 h1 {
   font-size: 2.5rem;
 }
+
 h2 {
   font-size: 2rem;
 }
+
 h3 {
   font-size: 1.375rem;
 }
+
 h4 {
   font-size: 1.125rem;
 }
+
 p {
   font-size: 1.125rem;
   font-weight: 300;
 }
+
 strong {
   font-weight: 700;
 }
@@ -51,9 +69,11 @@ strong {
 .left {
   text-align: left;
 }
+
 .right {
   text-align: right;
 }
+
 .center {
   text-align: center;
   margin-left: auto;
@@ -61,88 +81,148 @@ strong {
 }
 
 /* CLASSES */
-.product-img{
-    max-width: 90%;
+
+.product-img {
+  max-width: 90%;
 }
 
 /* GRID SYSTEM  */
 
 .container {
-	margin-bottom: 2rem;
-	margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .row {
-	display: flex;
-	justify-content: space-between;
-	text-align: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 @media (min-width: 980px) {
-	.container{
-		padding-left: 6%;
-		padding-right: 6%;
-	}
-	.row {
-        margin-top: 2rem;
-        flex-flow: row wrap;
-    }
-	.row:first-child {
-        margin-top: 0;
-    }
-	.col-1 	{width: 7.05%;}
-	.col-2 	{width: 15.5%;}
-	.col-3	{width: 23.95%;}
-	.col-4	{width: 32.4%;}
-	.col-5 	{width: 40.85%;}
-	.col-6	{width: 49.3%;}
-	.col-7 	{width: 57.75%;}
-	.col-8 	{width: 66.2%;}
-	.col-9 	{width: 74.65%;}
-	.col-10 {width: 83.1%;}
-	.col-11 {width: 91.55%;}
-	.col-12	{width: 100%;}
+  .container {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .row {
+    margin-top: 2rem;
+    flex-flow: row wrap;
+  }
+
+  .row:first-child {
+    margin-top: 0;
+  }
+
+  .col-1 {
+    width: 7.05%;
+  }
+
+  .col-2 {
+    width: 15.5%;
+  }
+
+  .col-3 {
+    width: 23.95%;
+  }
+
+  .col-4 {
+    width: 32.4%;
+  }
+
+  .col-5 {
+    width: 40.85%;
+  }
+
+  .col-6 {
+    width: 49.3%;
+  }
+
+  .col-7 {
+    width: 57.75%;
+  }
+
+  .col-8 {
+    width: 66.2%;
+  }
+
+  .col-9 {
+    width: 74.65%;
+  }
+
+  .col-10 {
+    width: 83.1%;
+  }
+
+  .col-11 {
+    width: 91.55%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
 }
 
-@media only screen and (min-width: 661px) and (max-width: 979px) {	
-	.container{
-		padding-left: 5%;
-		padding-right: 5%;
-	}
-	
-	.row {flex-flow: row wrap;}
-	
-	.t-col-4,.t-col-6,.t-col-12 {margin-top: 2rem}
-	.t-col-4 		{width: 31.46%	}
-	.t-col-6 		{width: 48.6%;}
-	.t-col-12 		{width: 100%;}
-	
-	.row:first-child .t-col-4,
-	.row:first-child .t-col-6,
-	.row:first-child .t-col-12 {
-		 margin-top: 0;
-	}
+@media only screen and (min-width: 661px) and (max-width: 979px) { 
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .row {
+    flex-flow: row wrap;
+  }
+  
+  .t-col-4,
+  .t-col-6,
+  .t-col-12 {
+    margin-top: 2rem;
+  }
+
+  .t-col-4 {
+    width: 31.46%;
+  }
+
+  .t-col-6 {
+    width: 48.6%;
+  }
+
+  .t-col-12 {
+    width: 100%;
+  }
+
+  .row:first-child .t-col-4,
+  .row:first-child .t-col-6,
+  .row:first-child .t-col-12 {
+    margin-top: 0;
+  }
 }
-
-
-
 
 @media only screen and (min-width: 0px) and (max-width: 660px) {
-	.container{
-		padding-left: 3%;
-		padding-right: 3%;
-	}
-	
-	.row {flex-flow: row wrap;}
-	
-	.m-col-6,
-	.m-col-12 {margin-top: 2rem;}
-	
-	.m-col-6 		{width: 47.2%;}
-	.m-col-12 		{width: 100%;}
-	
-	.row:first-child .m-col-6,
-	.row:first-child .m-col-12 {
-		 margin-top: 0;
-	}
+  .container {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .row {
+    flex-flow: row wrap;
+  }
+
+  .m-col-6,
+  .m-col-12 {
+    margin-top: 2rem;
+  }
+
+  .m-col-6 {
+    width: 47.2%;
+  }
+
+  .m-col-12 {
+    width: 100%;
+  }
+
+  .row:first-child .m-col-6,
+  .row:first-child .m-col-12 {
+    margin-top: 0;
+  }
 }
